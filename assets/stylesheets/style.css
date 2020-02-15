@@ -79,3 +79,56 @@ p {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: [hero-start] 50vh [hero-end clients-start] 10vh [clients-end intro-start] 50vh [intro-end features-start] 80vh [features-end uses-start] 60vh [uses-end testimony-start] 80vh [testimony-end sign-up-start] 70vh [sign-up-end];
+}
+
+/* Hero */
+
+.hero {
+  grid-column: 1 / -1;
+  grid-row: hero;
+  display: grid;
+  grid-template-rows: inherit;
+  grid-template-columns: inherit;
+  align-items: center;
+  background-image: linear-gradient(to right, #3fccbb, #31a2bb);
+  max-width: 100%;
+}
+
+.hero-image {
+  grid-column: 1 / 10;
+  grid-row: hero;
+  overflow: hidden;
+  height: 100%;
+}
+
+.hero-image img {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  left: -10px;
+  object-fit: cover;
+}
+
+.hero-text {
+  grid-column: 7 / -1;
+  grid-row: hero;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.hero-text p {
+  width: 50%;
+}
+
+.hero-text button {
+  padding: 10px 42px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  color: #31a2bb;
+}
