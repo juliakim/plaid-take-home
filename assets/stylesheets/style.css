@@ -132,3 +132,28 @@ p {
   margin-top: 5px;
   color: #31a2bb;
 }
+
+/* Clients */
+
+.clients {
+  grid-column: 1 / -1;
+  grid-row: clients;
+  display: grid;
+  align-items: center;
+  background-color: #f7f7f8;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5vw;
+}
+
+.client-logo {
+  text-align: center;
+}
+
+.client-logo img {
+  width: 50%;
+  vertical-align: middle;
+}
