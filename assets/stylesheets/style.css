@@ -99,6 +99,36 @@ p {
   grid-template-rows: repeat(2, 50%);
 }
 
+/* Navigation */
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+  height: 7vh;
+  margin: 0 10vw;
+  color: #2ea4ad;
+}
+
+.nav-logo {
+  height: 70%;
+}
+
+.nav-logo img {
+	height: 100%;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-menu li:last-child {
+  padding: 5px 20px;
+  border: 1px solid #79bfc7;
+  border-radius: 5px;
+}
+
 /* Hero */
 
 .hero {
