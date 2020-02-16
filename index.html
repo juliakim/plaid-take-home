@@ -24,9 +24,7 @@
   </header>
   <main class="container">
     <section class="hero">
-      <div class="hero-image">
-        <img src="assets/images/hero.png" alt="Orbits surrounding a cube">
-      </div>
+      <div class="hero-image"></div>
       <div class="hero-text">
         <h1>Data To Power Marketing Campaigns.</h1>
         <p>Clearbit is behind some of the world's most advanced marketing teams</p>
@@ -65,16 +63,16 @@
     </section>
     <section class="features row-1-2">
       <div class="enrichment feature">
-        <div class="enrichment-text">
-          <h2>Enrichment</h2>
+        <div class="feature-left">
+          <h4>Enrichment</h4>
           <p>Our Enrichment product takes an email address or domain and returns rich person and company information.<br>Run all of your signups through us, we'll enrich the emails and send the data to your CRM or Marketing Automation Platform, say Marketo.<br><br>Once all your leads are enriched, you can segment and route leads, perform targeted campaigns, and qualify customers.</p>
         </div>
-        <img src="assets/images/enrichment.png" alt="Mail pointing to a document">
+        <img class="feature-right" src="assets/images/enrichment.png" alt="Mail pointing to a document">
       </div>
       <div class="reveal feature">
-        <img src="assets/images/reveal.png" alt="IP address pointing to a document">
-        <div class="reveal-text">
-          <h2>Reveal</h2>
+        <img class="feature-left" src="assets/images/reveal.png" alt="IP address pointing to a document">
+        <div class="feature-right">
+          <h4>Reveal</h4>
           <p>Our Reveal Product takes an IP address and returns company information. Reveal deanonymizes the visitors on your website and shows you which companies are visiting, as well as informations about the category and size.<br><br>Reveal will then pipes this information into Google Analytics so you start extracting real business value.</p>
         </div>
       </div>
@@ -87,7 +85,7 @@
       <div class="uses-data">
         <img src="assets/images/clearbit-logo.png" alt="Clearbit logo">
         <p>Use Clearbit's Data Enrichment To:</p>
-        <p>Enrichment/</p>
+        <p id="uses-enrichment">Enrichment/</p>
       </div>
     </section>
     <section class="testimony">
@@ -105,7 +103,7 @@
         <p>Signing up is fast, free and easy</p>
       </div>
       <div class="sign-up-email">
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" placeholder="you@email.com">
         <button>GET STARTED</button>
       </div>
     </section>
