@@ -65,6 +65,11 @@ h2 {
   margin: .83em 0;
 }
 
+h4 {
+  font-size: 1.1em;
+  margin: 1.33em 0;
+}
+
 p {
   font-size: .75em;
   line-height: 2;
@@ -84,7 +89,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: repeat(10, 10vw);
-  grid-template-rows: [hero-start] 50vh [hero-end clients-start] 10vh [clients-end intro-start] 50vh [intro-end features-start] 70vh [features-end uses-start] 40vh [uses-end testimony-start] 80vh [testimony-end sign-up-start] 70vh [sign-up-end];
+  grid-template-rows: [hero-start] 50vh [hero-end clients-start] 10vh [clients-end intro-start] 50vh [intro-end features-start] 70vh [features-end uses-start] 40vh [uses-end testimony-start] 50vh [testimony-end sign-up-start] 70vh [sign-up-end];
 }
 
 .row-1-2 {
@@ -100,7 +105,6 @@ p {
   grid-column: 1 / -1;
   grid-row: hero;
   display: grid;
-  grid-template-rows: inherit;
   grid-template-columns: inherit;
   align-items: center;
   background-image: linear-gradient(to right, #3fccbb, #31a2bb);
@@ -275,4 +279,38 @@ p {
   justify-self: center;
   height: 40px;
   width: 40px;
+}
+
+/* Testimonial */
+
+.testimony {
+  grid-column: 1 / -1;
+  grid-row: testimony;
+  display: grid;
+  grid-template-columns: inherit;
+  background-color: #dcd7d3;
+  /* align-items: center;
+  max-width: 100%; */
+}
+
+.testimony-image {
+  grid-column: 1 / -1;
+  grid-row: testimony;
+  overflow: hidden;
+}
+
+.testimony-image img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.testimony-quote {
+  grid-column: 5 / -2;
+  grid-row: testimony;
+  align-self: center;
+  z-index: 1;
+  padding: 0 10px;
+  margin: 0 5vw;
+  line-height: 1.7;
 }
