@@ -408,6 +408,7 @@ p {
 
 .footer-category li {
   padding: .5rem 0;
+  text-transform: capitalize;
 }
 
 .footer-category li:first-child {
